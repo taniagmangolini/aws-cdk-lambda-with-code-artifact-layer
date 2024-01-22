@@ -14,7 +14,7 @@ python3 setup.py sdist
 pip install -i https://pypi.org/simple  twine
  ``` 
 
-3. Upload to AWSCodeArtifact repo:
+3. Upload to AWS CodeArtifact repo:
 
  ``` 
 export TWINE_USERNAME=aws

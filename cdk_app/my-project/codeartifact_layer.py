@@ -32,8 +32,6 @@ class LambdaLayer(Construct):
 
         index_url = f"https://aws:{code_artifact_auth_token}@{domain}-{domain_owner}.d.codeartifact.{region}.amazonaws.com/pypi/{repo_name}/simple/"
         
-        print('#######################################################', index_url)
-
         self.lambda_layer = lambdapython.PythonLayerVersion(
             self,
             "MyPackage",
